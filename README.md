@@ -3,6 +3,8 @@
 **Reproducible numerical-verification benchmarks for reduced compliant-impact and frictional-contact models.**
 
 [Source code](https://github.com/spodlesny2318-arch/ContactImpactBench) ·
+[PyPI 0.1.3](https://pypi.org/project/contactimpactbench/0.1.3/) ·
+[GitHub Release v0.1.3](https://github.com/spodlesny2318-arch/ContactImpactBench/releases/tag/v0.1.3) ·
 [TestPyPI 0.1.2](https://test.pypi.org/project/contactimpactbench/0.1.2/) ·
 [MIT License](LICENSE) · [CITATION.cff](CITATION.cff)
 
@@ -17,18 +19,18 @@ real inflated hyperelastic shell.**
 
 Requires Python >= 3.10 and compatible NumPy/SciPy releases.
 
-**Current verified public release:** version `0.1.2` on TestPyPI (wheel and
-source distribution). To install it into a new environment, obtain NumPy and
-SciPy from PyPI and the ContactImpactBench package from TestPyPI:
+**Current public release: `0.1.3` on the main PyPI index.** Both a wheel
+and a source distribution are publicly available. In a fresh virtual
+environment, install and verify with:
 
 ```bash
-python -m pip install numpy scipy
-python -m pip install --no-deps --index-url https://test.pypi.org/simple/ contactimpactbench==0.1.2
+python -m pip install contactimpactbench==0.1.3
 python -m pip check
+python -m contactimpactbench env
 python -m contactimpactbench verify --full
 ```
 
-**From this repository's source tree (0.1.3):**
+**From the GitHub source tree (for developers):**
 
 ```bash
 python -m pip install -e '.[test]'
@@ -36,15 +38,11 @@ python -m pytest -q
 python -m contactimpactbench verify --full
 ```
 
-**After version 0.1.3 has been published to the main PyPI index:**
-
-```bash
-python -m pip install contactimpactbench==0.1.3
-```
-
-These are separate distribution channels: version 0.1.3 is not represented
-here as already published to PyPI. On Windows use a virtual environment and
-its `Scripts\python.exe` as explained in
+**Historical test release:** version `0.1.2` remains available on
+[TestPyPI](https://test.pypi.org/project/contactimpactbench/0.1.2/).
+TestPyPI and PyPI are separate indexes; use the main PyPI command above for
+current installations. On Windows use a virtual environment and its
+`Scripts\python.exe` as explained in
 [reproducibility instructions](docs/REPRODUCIBILITY.md).
 
 ## Main commands
@@ -80,12 +78,23 @@ reproducibility against stored results, **not accuracy against experiments**.
 
 ## Verification status
 
-- 0.1.2 was uploaded to public TestPyPI (wheel + sdist) on 2026-11-10.
-- The user verified a clean Windows/Python 3.14.3 TestPyPI installation:
-  NumPy 2.5.4, SciPy 1.18.1, `pip check` clean, full regression **64/64**.
-- 0.1.3 changes release metadata and documentation; it is a new source
-  candidate until its own local/CI tests and subsequent distribution checks
-  are completed. A passing regression is not experimental validation.
+- **PyPI v0.1.3:** wheel and source distribution publicly published on
+  2026-11-10; the wheel was installed from the *main* PyPI index in a fresh
+  Windows virtual environment (Python 3.14.3, NumPy 2.5.4, SciPy 1.18.1).
+  Dependency check passed; the full archived **64/64 regression** passed
+  (N3.3: 36, N3.4: 24, N3.6: 4).
+- **Source-tree tests:** **23/23 pytest PASS** in the user's Windows
+  environment; GitHub Actions CI passed on Windows and Ubuntu following
+  the LF line-ending reproducibility fix.
+- **GitHub Release:**
+  [v0.1.3](https://github.com/spodlesny2318-arch/ContactImpactBench/releases/tag/v0.1.3)
+  includes both distribution archives, associated with tagged source commit
+  `80e81e1`.
+- **Historical TestPyPI v0.1.2:** wheel and sdist published on 2026-11-10;
+  independent test-index installation and 64/64 regression also passed.
+
+These are numerical reproducibility and software compatibility checks,
+**not** experimental physical validation of an inflated shell.
 
 ## Project documentation
 
