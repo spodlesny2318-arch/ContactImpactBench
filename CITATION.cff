@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use ContactImpactBench in your research, please cite the software release."
+title: "ContactImpactBench: reproducible numerical verification of compliant impact and contact"
+type: software
+authors:
+  - family-names: Podliesnyi
+    given-names: Serhii
+  - family-names: Sheremet
+    given-names: Oleksii
+  - family-names: Tomashevskyi
+    given-names: Roman S.
+version: 0.1.3
+repository-code: https://github.com/spodlesny2318-arch/ContactImpactBench
+license: MIT
+keywords:
+  - contact mechanics
+  - impact dynamics
+  - numerical verification
+  - friction

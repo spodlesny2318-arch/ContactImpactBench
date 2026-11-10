@@ -1,0 +1,9 @@
+include README.md LICENSE CITATION.cff CHANGELOG.md RELEASE_GATE.md MANIFEST.in
+recursive-include docs *.md
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include provenance *.csv *.txt *.py
+recursive-include tools *.py
+recursive-include src/contactimpactbench/data *.csv
+recursive-include src/contactimpactbench/_legacy *.py
+recursive-exclude * __pycache__ *.pyc .pytest_cache .venv* *.egg-info

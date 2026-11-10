@@ -1,0 +1,4 @@
+source,relative_path,size_bytes,sha256
+N3.3 original,src/contactimpactbench/_legacy/JoMMS_N3_3_kelvin_consistent.py,6192,b7bac7f9b5b29dd298bbe8c8344ffedddd2ee1433ef4c6adfacbb98db6ff3da3
+N3.4 original,provenance/JoMMS_N3_4_independent_checks_original.py,3252,fa051c8ee604472784d1dc0206ac298cb8ad96ca573e2b1d82d7015b72e01dc3
+N3.6 original,src/contactimpactbench/_legacy/JoMMS_N36_patch.py,5571,897847357667dbd81a22fc2dfdec741552d3b81462f9ccdae51ff3b3b7c7a8e9
