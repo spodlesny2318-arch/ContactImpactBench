@@ -1,4 +1,4 @@
-include README.md LICENSE CITATION.cff CHANGELOG.md RELEASE_GATE.md MANIFEST.in
+include README.md LICENSE CITATION.cff AUTHORS.md CHANGELOG.md RELEASE_GATE.md MANIFEST.in
 recursive-include docs *.md
 recursive-include examples *.py
 recursive-include tests *.py

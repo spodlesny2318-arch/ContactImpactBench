@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.4 — 2026-11-11 (authorship metadata correction; candidate)
+
+- Updated the declared software authors/creators to **Serhii Podliesnyi,
+  Oksana Chmykhova, Bohdan Vorobiov**, matching the accompanying SoftwareX
+  article author list supplied by the author.
+- Updated `CITATION.cff` (including ORCID and affiliation), packaging authors,
+  `AUTHORS.md`, README and version-specific metadata tests.
+- Source code and archived validation/reference CSV data are unchanged.
+- The public v0.1.3 GitHub tag/Release and PyPI assets remain intact and
+  historically attributable to their originally published metadata.
+
+
 ## 0.1.3 — 2026-11-10 (source release candidate)
 
 - Corrected public release status following the successful 0.1.2 TestPyPI

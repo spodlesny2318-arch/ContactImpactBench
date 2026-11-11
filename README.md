@@ -1,10 +1,10 @@
-# ContactImpactBench 0.1.3
+# ContactImpactBench 0.1.4
 
 **Reproducible numerical-verification benchmarks for reduced compliant-impact and frictional-contact models.**
 
 [Source code](https://github.com/spodlesny2318-arch/ContactImpactBench) ·
-[PyPI 0.1.3](https://pypi.org/project/contactimpactbench/0.1.3/) ·
-[GitHub Release v0.1.3](https://github.com/spodlesny2318-arch/ContactImpactBench/releases/tag/v0.1.3) ·
+[PyPI](https://pypi.org/project/contactimpactbench/) ·
+[GitHub Releases](https://github.com/spodlesny2318-arch/ContactImpactBench/releases) ·
 [TestPyPI 0.1.2](https://test.pypi.org/project/contactimpactbench/0.1.2/) ·
 [MIT License](LICENSE) · [CITATION.cff](CITATION.cff)
 
@@ -19,12 +19,10 @@ real inflated hyperelastic shell.**
 
 Requires Python >= 3.10 and compatible NumPy/SciPy releases.
 
-**Current public release: `0.1.3` on the main PyPI index.** Both a wheel
-and a source distribution are publicly available. In a fresh virtual
-environment, install and verify with:
+**Install the latest published release from PyPI** in a fresh virtual environment and verify with:
 
 ```bash
-python -m pip install contactimpactbench==0.1.3
+python -m pip install contactimpactbench
 python -m pip check
 python -m contactimpactbench env
 python -m contactimpactbench verify --full
@@ -76,6 +74,12 @@ of local contact area and pressure has not been demonstrated. The archived
 **64-case regression** (N3.3: 36, N3.4: 24, N3.6: 4) checks numerical
 reproducibility against stored results, **not accuracy against experiments**.
 
+## Release status
+
+Version 0.1.4 changes author/citation and package version metadata only.
+Install availability of version 0.1.4 depends on publishing it separately on
+PyPI; already-published version 0.1.3 remains available and unchanged.
+
 ## Verification status
 
 - **PyPI v0.1.3:** wheel and source distribution publicly published on
@@ -96,6 +100,14 @@ reproducibility against stored results, **not accuracy against experiments**.
 These are numerical reproducibility and software compatibility checks,
 **not** experimental physical validation of an inflated shell.
 
+## Authors and citation
+
+For the **0.1.4** correction release, the software and planned SoftwareX
+article author list is **Serhii Podliesnyi, Oksana Chmykhova, and Bohdan
+Vorobiov** (in that order). See [AUTHORS.md](AUTHORS.md) and
+[CITATION.cff](CITATION.cff) for ORCID identifiers and citation metadata.
+Earlier v0.1.3 release archives retain their original published metadata.
+
 ## Project documentation
 
 - [API reference](docs/API_REFERENCE.md)
@@ -105,6 +117,7 @@ These are numerical reproducibility and software compatibility checks,
 - [Windows publication instructions](docs/PUBLISHING_WINDOWS_RU.md)
 - [Changelog](CHANGELOG.md)
 - [Citable software authors](CITATION.cff)
+- [Authors and corresponding author](AUTHORS.md)
 - [Provenance hashes](provenance/SOURCES_SHA256.csv)
 
 ## License and citation
